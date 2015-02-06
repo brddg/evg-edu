@@ -1,3 +1,5 @@
+  <?php if(is_front_page()) { require 'recent-posts.php'; } ?>
+
   <!-- PAGE | CONTACT -->
   <div class="pages black-bg white page-contact" id="page-contact">
     <div class="container">

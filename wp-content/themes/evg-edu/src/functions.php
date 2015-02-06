@@ -32,7 +32,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('recent-post', 390, 308, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -486,5 +486,15 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+function custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+  return '...';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 ?>
