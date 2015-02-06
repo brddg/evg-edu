@@ -256,7 +256,10 @@ function html5wp_pagination()
         'base' => str_replace($big, '%#%', get_pagenum_link($big)),
         'format' => '?paged=%#%',
         'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages
+        'total' => $wp_query->max_num_pages,
+        'type' => 'list',
+        'prev_text' => 'Prev',
+        'next_text' => 'Next'
     ));
 }
 
@@ -486,11 +489,6 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
-
-function custom_excerpt_length( $length ) {
-  return 20;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 function new_excerpt_more( $more ) {
   return '...';

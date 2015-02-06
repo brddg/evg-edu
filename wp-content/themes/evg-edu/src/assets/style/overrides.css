@@ -195,3 +195,9 @@ nav .brand img{
 	opacity:.7;
 	text-decoration: none;
 }
+
+.pagination ul > li > span.current {
+  color :#bbb;
+  cursor: default;
+  background-color: #f5f5f5;
+}
