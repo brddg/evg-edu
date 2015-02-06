@@ -232,6 +232,10 @@ nav .brand img{
   width: 100%;
 }
 
+.comment-respond label {
+  font-size: 14px;
+}
+
 .comment-respond input:focus, .comment-respond textarea:focus {
   background-color: #fff;
 }
