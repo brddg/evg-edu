@@ -46,7 +46,6 @@
           
           <!-- MAIN MENU -->
           <ul id="main-menu" class="nav-collapse collapse">
-            <?php html5blank_nav(); ?>
             <li><a href="#page-welcome">Home</a></li>
             <li><a href="#page-work">Work</a></li>
             <li><a href="#page-features">Solutions</a></li>
