@@ -110,6 +110,13 @@ nav .brand img{
 	font-size:12px;
 }
 
+.portfolio-items a br, 
+.portfolio-items a > p, 
+.portfolio-items .portfolio-overlay > p, 
+.portfolio-items li > p{
+  display: none;
+}
+
 @media (max-width: 1279px){
 	.portfolio-items .portfolio-overlay {
 		height: 239px;
