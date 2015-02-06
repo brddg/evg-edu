@@ -23,7 +23,7 @@ $(document).ready(function(){
     $(window).trigger('scroll');
     
     /* Fix navigation. */
-    $('#navigation').fixedonlater({
+    $('#navigation.hideme').fixedonlater({
         speedDown: 250,
         speedUp: 100
     });

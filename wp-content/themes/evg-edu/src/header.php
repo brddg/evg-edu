@@ -26,7 +26,7 @@
     Thanks for your inquiry! We will be in touch with you soon.
   </div>
   <!-- NAVIGATION -->
-  <nav class="fixed-top" id="navigation">
+  <nav class="fixed-top <?php if (is_front_page()){ echo "hideme"; } else { echo "showme"; } ?>" id="navigation">
     <div class="container">
       <div class="row-fluid">
         <div class="span12 center">
