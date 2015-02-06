@@ -44,7 +44,7 @@
               </h5>
 
               <!-- Blog post description -->
-              <p class="smallFontBy08"><?php the_excerpt(); ?></p>
+              <p class="smallFontBy08"><?php  html5wp_excerpt('html5wp_index'); ?></p>
 
               <!-- Blog read more -->
               <div class="read-more">
