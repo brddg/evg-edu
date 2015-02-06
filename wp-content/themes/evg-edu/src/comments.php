@@ -1,17 +1,15 @@
-<div id="comments" class="comments">
+<div id="comments" class="comments-details">
 	<?php if (post_password_required()) : ?>
 	<p><?php _e( 'Post is password protected. Enter the password to view any comments.', 'html5blank' ); ?></p>
-</div>
+
 
 	<?php return; endif; ?>
 
 <?php if (have_comments()) : ?>
 
-	<h2><?php comments_number(); ?></h2>
 
-	<ul>
-		<?php wp_list_comments('type=comment&callback=html5blankcomments'); // Custom callback in functions.php ?>
-	</ul>
+<?php wp_list_comments('type=comment&callback=html5blankcomments'); // Custom callback in functions.php ?>
+
 
 <?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
@@ -19,6 +17,11 @@
 
 <?php endif; ?>
 
-<?php comment_form(); ?>
-
 </div>
+
+<?php $args = array(
+  'comment_notes_after' => '',
+  'title_reply' => __('Drop a Comment')
+);
+?>
+<?php comment_form($args); ?>

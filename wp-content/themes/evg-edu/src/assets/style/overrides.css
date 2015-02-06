@@ -210,3 +210,49 @@ nav .brand img{
 .pages {
   margin-top: 50px;
 }
+
+.comment-respond {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.comment-respond h3 {
+  font-size: 15.200000000000001px;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 13.5px 0;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.comment-respond input, .comment-respond textarea {
+  background-color: #EEE;
+  color: #666;
+  font-size: 14px;
+  width: 100%;
+}
+
+.comment-respond input:focus, .comment-respond textarea:focus {
+  background-color: #fff;
+}
+
+.comment-respond #submit {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #4E808E;
+  background-image: -moz-linear-gradient(top,#4e808e,#4e808e);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#4E808E),to(#4E808E));
+  background-image: -webkit-linear-gradient(top,#4E808E,#4E808E);
+  background-image: -o-linear-gradient(top,#4e808e,#4e808e);
+  background-image: linear-gradient(to bottom,#4E808E,#4E808E);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4e808e',endColorstr='#ff4e808e',GradientType=0);
+  border-color: #4E808E #4E808E #33535D;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  text-transform: uppercase;
+  width: auto;
+}

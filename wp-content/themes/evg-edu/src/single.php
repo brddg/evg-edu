@@ -1,71 +1,70 @@
 <?php get_header(); ?>
 
-	<main role="main">
-	<!-- section -->
-	<section>
+<div class="pages page-blog-list" id="page-blog-list">
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h4 class="line-divider">Blog</h4>
+      <h1>Blog Posts</h1>
+      <div class="row">
+        <div class="span8 offset2">
+          <div class="input-append">
+            <form method="get" action="<?php echo home_url(); ?>" role="search">
+              <input name="s" class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
+              <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
 
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+    <div class="row-fluid">
+      <div class="span8 blog-details">
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
+          <!-- Article -->
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <!-- Blog image -->
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('full'); ?>
+            </a>
 
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
+            <!-- Blog title -->
+            <h5>
+              <?php echo the_title(); ?><br>
+              <small>Posted By <?php the_author(); ?>, <?php the_date(); ?></small>
+            </h5>
 
-			<!-- post details -->
-			<span class="date">
-				<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-					<?php the_date(); ?> <?php the_time(); ?>
-				</time>
-			</span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
+            <!-- Blog post description -->
+            <?php the_content(); ?>
 
-			<?php the_content(); // Dynamic Content ?>
+          </article>
+        
+          <!-- Blog comments -->
+          <div class="comments">
+            <a href="<?php the_permalink(); ?>#comments"><?php comments_number( '0 comments', '1 comment', '% comments' ); ?></a>
+          </div>
+          <?php comments_template(); ?>
+        <?php endwhile; ?>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+        <?php else: ?>
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+          <!-- article -->
+          <article>
+            <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+          </article>
+          <!-- /article -->
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+        <?php endif; ?>
 
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-			<?php comments_template(); ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else: ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-
-	</section>
-	<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+      </div>
+      
+      <?php get_sidebar(); ?>
+    </div>    
+  </div>
+</div>
 
 <?php get_footer(); ?>
+
