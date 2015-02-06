@@ -32,7 +32,7 @@
         <div class="span12 center">
           <!-- LOGO -->
           <a class="brand pull-left" href="./">
-            <img src="assets/images/logo.jpg" alt="EVG">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg" alt="EVG">
           </a>
           <!-- END LOGO -->
 
