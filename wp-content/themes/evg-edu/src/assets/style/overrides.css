@@ -1,0 +1,186 @@
+.page-welcome .logo {
+	width: 320px;
+	height:54px;
+}
+
+.page-welcome #welcome-messages {
+	margin-top: 25px;
+}
+
+#page-contact .media-body {
+	font-size: 30px;
+	line-height: 45px;
+}
+
+#page-contact .sicon-white i {
+	display: inline-block;
+	font-size: .8em;
+	line-height: 22.5px;
+}
+
+#consultation {
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	margin-top: 30px;
+	border:3px solid white;
+	font-size: 25px;
+}
+
+#consultation:hover {
+	text-decoration: none;
+	background: white;
+	color:#292929;
+}
+
+input, textarea{
+	width: 300px;
+}
+
+textarea {
+	height: 110px;
+}
+
+#myModal {
+	height: 540px;
+}
+
+#myModal .modal-body {
+	max-height: 470px;
+}
+
+.alert {
+	margin-bottom:0;
+}
+
+nav .span12{
+	position: relative;
+}
+
+nav .span12 .social-icons{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+nav .brand{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+nav .brand img{
+	height: 30px;
+}
+
+@media (max-width: 767px){
+	#navigation .brand {
+		padding-top: 4px;
+	}
+}
+
+.portfolio-items .portfolio-overlay {
+	background: none;
+	background-color: #4E808E;
+	display: table;
+	height:300px;
+}
+
+.portfolio-items .portfolio-overlay .portfolio-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.portfolio-items h4{
+	border-top:none;
+	border-bottom:1px solid #fff;
+	padding-top:0;
+	padding-bottom:15px;
+	top:inherit;
+	position:inherit;
+}
+
+.portfolio-items p{
+	color:white;
+	text-align:center;
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	font-size:12px;
+}
+
+@media (max-width: 1279px){
+	.portfolio-items .portfolio-overlay {
+		height: 239px;
+	}
+}
+
+@media (max-width: 979px){
+	.portfolio-items .portfolio-overlay {
+		height: 184px;
+	}
+	.portfolio-items p{
+		font-size:10px;
+		line-height:16px;
+	}
+}
+
+@media (max-width: 767px){
+	.portfolio-items .portfolio-overlay {
+		display:none;
+	}
+}
+
+#page-about .span4 p.smallFontBy08 {
+	height: 60px;
+}
+
+@media (max-width:991px){
+	#page-about .span4 p.smallFontBy08 {
+		height: 90px;
+	}
+}
+
+@media (max-width:767px){
+	#page-about .span4 p.smallFontBy08 {
+		height: 120px;
+	}
+}
+
+@media (max-width:480px){
+	#page-about .span4 p.smallFontBy08 {
+		height: 70px;
+	}
+}
+
+@media (max-width: 767px){
+	.page-clients	.row-fluid{
+		padding-bottom:0;
+		padding-top:0;
+	}
+	.page-clients .span2 {
+		margin-bottom: 20px;
+	}	
+}
+
+.sicon-gplus i{
+	background-position: -400px 0;
+}
+
+.social-icons.hover-big .sicon-gplus:hover {
+	background-color:#bd3827;
+}
+
+#page-contact a {
+	color: white;
+}
+
+#page-features .span4 a{
+	color: white;
+}
+
+#page-features .span4 a:hover{
+	opacity:.7;
+	text-decoration: none;
+}
