@@ -143,6 +143,10 @@ nav .brand img{
 	height: 60px;
 }
 
+.about-items h5 br:first-child {
+  display: none;
+}
+
 @media (max-width:991px){
 	#page-about .span4 p.smallFontBy08 {
 		height: 90px;
