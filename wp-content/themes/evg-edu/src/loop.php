@@ -10,7 +10,7 @@
     <!-- Blog title -->
     <h5>
       <?php echo the_title(); ?><br>
-      <small>Posted By <?php the_author_posts_link(); ?>, <?php the_date(); ?></small>
+      <small>Posted By <?php the_author(); ?>, <?php the_date(); ?></small>
     </h5>
 
     <!-- Blog post description -->
