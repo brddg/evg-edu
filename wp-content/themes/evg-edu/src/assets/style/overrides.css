@@ -260,3 +260,7 @@ nav .brand img{
   text-transform: uppercase;
   width: auto;
 }
+
+#page-welcome {
+  margin-top: 0;
+}

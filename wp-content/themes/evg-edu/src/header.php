@@ -31,7 +31,7 @@
       <div class="row-fluid">
         <div class="span12 center">
           <!-- LOGO -->
-          <a class="brand pull-left" href="./">
+          <a class="brand pull-left" href="/">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg" alt="EVG">
           </a>
           <!-- END LOGO -->
@@ -51,6 +51,7 @@
             <li><a href="#page-features">Solutions</a></li>
             <li><a href="#page-about">About</a></li>
             <li><a href="#page-contact">Contact</a></li>
+            <li><a href="/blog/">Blog</a></li>
           </ul>
           <!-- END MAIN MENU -->
           
