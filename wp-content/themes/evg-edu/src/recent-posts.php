@@ -13,8 +13,10 @@
         <div class="row">
           <div class="span8 offset2">
             <div class="input-append">
-              <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
-              <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
+              <form method="get" action="<?php echo home_url(); ?>" role="search">
+                <input name="s" class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
+                <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
+              </form>
             </div>
           </div>
         </div>
