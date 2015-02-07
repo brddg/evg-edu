@@ -51,7 +51,7 @@
             <li><a href="#page-features">Solutions</a></li>
             <li><a href="#page-about">About</a></li>
             <li><a href="#page-contact">Contact</a></li>
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/blog/" class="external">Blog</a></li>
           </ul>
           <!-- END MAIN MENU -->
           

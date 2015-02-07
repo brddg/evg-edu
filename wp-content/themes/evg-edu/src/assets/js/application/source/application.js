@@ -47,15 +47,24 @@ $(document).ready(function(){
     });
     
     /* Scroll spy and scroll filter */
-    $('#main-menu').onePageNav({
-        currentClass: "active",
-        changeHash: false,
-        scrollOffset: navigationHeight - 10,
-        scrollThreshold: 0.5,
-        scrollSpeed: 750,
-        filter: "",
-        easing: "swing"
-     });
+   
+    if ($('body.home').length > 0) {
+      $('#main-menu').onePageNav({
+          currentClass: "active",
+          changeHash: false,
+          scrollOffset: navigationHeight - 10,
+          scrollThreshold: 0.5,
+          scrollSpeed: 750,
+          filter: ":not(.external)",
+          easing: "swing"
+       });
+    }
+    else {
+       $('#main-menu li a').click(function(e){
+           e.preventDefault();
+           window.location = "/"+$(this).attr('href');
+       });
+    }
     
     /* 
     *  Paralax initialization.
