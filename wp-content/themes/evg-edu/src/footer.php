@@ -73,7 +73,7 @@
       
   
   <!-- INITIALIZE -->
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/application/source/application.js" type="text/javascript"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/application/application.min.js" type="text/javascript"></script>
 
     <!-- Modal -->
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
